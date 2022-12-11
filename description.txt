@@ -1,0 +1,12 @@
+The game is a two player game
+Each team is consisted of 5 positions and each position has different pros and cons...
+Mage ʚ♡ɞ
+pro: wide attack with a lot of attack damage, con: less strength
+Tank ʚ♡ɞ
+pro: wide attack and strong, con: less attack damage
+Carrie ʚ♡ɞ
+pro: high attack damage con: can attack only 2 characters per round and weak
+Jungle ʚ♡ɞ
+pro: very high attack damage, con: can attack only 1 character per round and very weak
+Fighter ʚ♡ɞ
+pro: medium attack damage, con: can attack only 3 characters per round
