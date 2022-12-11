@@ -1,8 +1,8 @@
 # Heroes-War
 - Project Title
-  Heroes' War
+  - Heroes' War
 - Project overview and features
-  This project is a 2-player game, it opens with letting each player chooses the characters on their team, each team
+  - This project is a 2-player game, it opens with letting each player chooses the characters on their team, each team
   has 5 positions; Mage, Carrie, Jungle, Fighter and Tank and each position has a unique abilities i.e. Mage can
   damage every character on the other team.
   After choosing characters, the program will ask the player whether they want to shop for some items (medicine:
