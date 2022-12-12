@@ -1,0 +1,4 @@
+Welcome to the shop!
+Each round, you can buy only 1 item from the shop.
+Your limit of items is 3.
+Choose carefully...
