@@ -110,7 +110,7 @@ class Item:
             data_list = [x for x in weapons_list]
             print(tabulate(data_list, headers=col_name))
         weapon_input = input("Buy your medicine:")
-        self.update_strength(weapon_input)
+        self.update_damage(weapon_input)
         for i in data_list:
             if i[0] == weapon_input:
                 self.items['Weapons'].append(i)
@@ -120,7 +120,7 @@ class Item:
         num = 0
         for items_list in self.items.values():
             num += len(items_list)
-        return num <= 6
+        return num <= 3
 
     def update_balance(self, file, item_input):
         with open(file, 'r') as data:
@@ -167,6 +167,12 @@ class Fight:
                                        , self.character_list[1].character_dict, self.character_list[0].player)
             self.choose_hero_to_attack(self.character_list[1].character_dict
                                        , self.character_list[0].character_dict, self.character_list[1].player)
+        if self.check_who_wins() != 'GO':
+            lose_player = self.check_who_wins()
+            if lose_player == 'player_2':
+                print(figlet_format(f'{self.character_list[0].player} wins', font='standard'))
+            elif lose_player == 'player_1':
+                print(figlet_format(f'{self.character_list[1].player} wins', font='standard'))
 
     def choose_the_hero_to_fight(self, player, name):
         print(f"{name} please choose 3 characters to perform a fight")
@@ -242,9 +248,11 @@ class Fight:
         for position, name in self.character_list[0].character_dict.items():
             if name[1] <= 0:
                 self.character_list[0].character_dict.pop(position)
+                break
         for position, name in self.character_list[1].character_dict.items():
             if name[1] <= 0:
                 self.character_list[0].character_dict.pop(position)
+                break
 
     def check_who_wins(self):
         strength_sum_1 = sum([x[1] for x in self.character_list[0].character_dict.values()])
