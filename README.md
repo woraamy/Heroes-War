@@ -28,3 +28,6 @@
   - tank_characters.csv: a csv file that stores the information of available tank characters
   - weapons.csv: a csv file that stores the information of weapon items
   - medicine.csv: a csv file that stores the information of medicine items
+
+github link:
+https://github.com/woraamy/Heroes-War
